@@ -1,6 +1,7 @@
 body{
   background-color: #ffb3e6;
 }
+
 button{
   border: none;
   display: flex;
@@ -9,6 +10,7 @@ button{
   margin-top: 10px;
   margin-bottom: 20px;
 }
+
 @font-face {
   font-family: umaGothic;
   src: url(../UmaMusumeGothic.otf);
@@ -28,4 +30,9 @@ button{
   text-align: center;
   font-family: umaGothic;
   font-size: 50px;
+}
+
+#label-container{
+  padding-top: 100px;
+  text-align: center;
 }

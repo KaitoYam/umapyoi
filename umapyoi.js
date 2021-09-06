@@ -3,6 +3,7 @@
 
 // the link to your model provided by Teachable Machine export panel
 const URL = "./myModel/";
+const music = new Audio('musics/umapyoi.mp3');
 let model, webcam, ctx, labelContainer, maxPredictions;
 var playSound = 0;
 async function init() {
@@ -44,7 +45,8 @@ async function predict() {
   // Prediction #1: run input through posenet
   // estimatePose can take in an image, video or canvas html element
   const { pose, posenetOutput } = await model.estimatePose(webcam.canvas);
-  const music = new Audio('musics/umapyoi.mp3');
+  //ウマぴょい伝説の読み取り
+
   // Prediction 2: run input through teachable machine classification model
   const prediction = await model.predict(posenetOutput);
   if(playSound == 1){

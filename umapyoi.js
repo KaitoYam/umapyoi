@@ -17,10 +17,11 @@ async function init() {
   maxPredictions = model.getTotalClasses();
   
   // Convenience function to setup a webcam
-  const size_X = 400;
-  const size_Y = 300;
+  const size_X = 500;
+  const size_Y = 375;
   const flip = true; // whether to flip the webcam
-  webcam = new tmPose.Webcam(size_X, size_Y, flip); // width, height, flip
+  webcam = new tmPose.Webcam(size_X, size_Y, flip); // width, height, flip1
+  
   await webcam.setup(); // request access to the webcam
   await webcam.play();
   window.requestAnimationFrame(loop);
